@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Nunito:wght@200;300;400;600;700&family=Satisfy&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#main {
+    margin: 30px 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.img-container {
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    background-color: #545442;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.7);
+    /* max-width: 80%; */
+    margin: 0 auto;
+}
+
+#title {
+    font-family: "Satisfy", cursive;
+    color: #fff;
+    font-size: 3rem;
+    padding-left: 4rem;
+}
+
+#img-div {
+    padding: 2rem 0;
+}
+
+#image {
+    max-width: 20rem;
+    max-height: 30rem;
+}
+#img-caption {
+    padding: 2rem 4rem;
+    line-height: 1.5;
+    color: #fff;
+    font-size: 20px;
+}
+
+#tribute-info {
+    padding: 1.5rem;
+    max-width: 80%;
+    margin: auto;
+}
+#tribute-info h1 {
+    padding-bottom: 1rem;
+}
+
+
+#tribute-info ul.cards {
+     margin: 0 -5px;
+     margin-bottom: 15px;
+}
+.cards::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+li.card {
+    padding: 0 10px;
+    list-style: none;
+}
+.card-content {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #ffff;
+}
+.card-content h3 {
+    padding-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.card-content p {
+    line-height: 25px;
+    padding: 0 1rem;
+    text-align: left;
+}
+#tribute-link {
+    text-decoration: none;
+    color: black;
+}
+footer {
+    font-size: 12px;
+    color: black;
+}
+@media  screen and (max-width: 600px) {
+    li.card {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+}
+@media  screen and (max-width: 750px) {
+      #title {
+          font-size: 2rem;
+          padding-left: 0;
+          padding-top: 1rem;
+      }
+      .img-container {
+          display: grid;
+      }
+      #tribute-info ul.cards {
+          margin: 0 -70px;
+      }
+}
+
